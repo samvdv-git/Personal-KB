@@ -2,13 +2,12 @@
 name = "personal-kb"
 version = "0.1.0"
 description = ""
-authors = ["Sam van der Voort <sam.van.der.voort@postnl.nl>"]
+authors = ["Sam van der Voort <samvdvoort@hotmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.13"
 requests = "^2.34.2"
-
 
 [build-system]
 requires = ["poetry-core"]
