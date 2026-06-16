@@ -17,3 +17,28 @@ def generate(prompt: str) -> str:
     response.raise_for_status()
 
     return response.json()["response"]
+
+
+def create_note(question: str) -> str:
+    prompt = f"""
+        Je bent een kennisassistent.
+
+        Maak van onderstaande vraag een Obsidian note.
+
+        Gebruik EXACT dit format:
+
+        TITLE:
+        ...
+
+        SUMMARY:
+        ...
+
+        CONTENT:
+        ...
+
+        Vraag:
+
+        {question}
+        """
+
+    return generate(prompt)
